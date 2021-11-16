@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  border:none !important;
+  outline: none !important;
+  text-decoration: none !important;
+  text-transform: capitalize;
+  font-weight: 400;
+  transition: all .2s linear;
+  text-decoration: none;
+  list-style: none;
+}
+/* .clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+  } */
+nav{
+    background:white;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+.nav-Active{
+    background:white;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 3px rgb(183 183 183);
+    z-index: 999;
+}
+
+label.logo {
+    color: #354046;
+    font-size: 35px;
+    padding: 0 100px;
+    line-height: 80px;
+    font-weight: bold;
+}
+.logo .span2{
+    color: #354046;
+}
+.logo .span1{
+    color: #0188df;
+}
+.logo:hover .span2{
+    color: #f00dca;
+}
+.logo:hover .span1{
+    color: #3614f7;
+}
+nav ul{
+    float: right;
+    margin-right: 70px;
+
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+    line-height: 80px;
+}
+nav ul li a {
+    color: #354046;
+    font-size: 17px;
+    padding: ;
+    padding: 7px 12px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background: rgb(23, 26, 201);
+    transition: .5s;
+    color: white;
+}
+.checkbtn{
+    float: right;
+    font-size: 30px;
+    color: blue;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+
+/* slider css */
+
+section{
+    overflow: hidden
+}
+.slider-sceen {
+    margin-top: ;
+    background: white;
+    padding: 80px 0;
+}
+
+.slider-content{
+    padding: 200px 0;
+    margin-left: 50px;
+}
+
+h1.slider-head {
+    font-size: 45px;
+}
+
+.slider-content button {
+    position: relative;
+    background: #0188df;
+    padding: 5px 35px;
+    font-size: 18px;
+    color: white;
+    border-radius: 4px;
+    z-index: 0;
+    overflow: hidden;
+}
+.slider-content button::before{
+    content: "";
+    position: absolute;
+    top:-100%;
+    left: 0%;
+    width: 100%;
+    border-radius: 4px;
+    height: 100%;
+    background-color: rgb(39, 39, 38);
+    z-index: -1;
+    transition: .2s linear;
+}
+.slider-content button:hover:before{
+    top: 0%;
+}
+.slider-content button:hover {
+    box-shadow: 1px 5px #0188df;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* service css */
+.box h3 i {
+    color: #0188df;
+    margin-right: 20px;
+}
+.box h3 i {
+    color: #0188df;
+    margin-right: 20px;
+}
+
+.box p {
+    margin-left: 55px;
+}
+
+.box {
+    padding: 40px 0;
+}
+
+section.service {
+    background: #eeeeee;
+    padding: 170px 0;
+}
+
+/* facility css */
+section.facility {
+    padding: 120px 0;
+}
+.heading{
+    text-align: center;
+}
+
+.heading h1{
+    color: #354046;
+}
+    .container-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+    
+    .container-box .img-box {
+        width: 350px;
+        height: 200px;
+        overflow: hidden;
+        background-size: cover;
+        margin: .3rem;
+    }
+    
+    .container-box .img-box img:hover{
+        transform:scale(1.5) ;
+    }
+    .container-box .img-box img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+ /* review section css    */
+ .review{
+    padding-bottom: 180px;
+    padding-top: 70px;
+}
+
+ .review-row .col-lg-4{
+     position: relative;
+ }
+ .review-row{
+     padding: 0 80px;
+ }
+
+ .card-box {
+    padding: 15px;
+    background: white;
+}
+.card-box::before{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background: white;
+    bottom: -15px;
+    transform: rotate(45deg);
+    left: 21px;
+}
+
+.card-box p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.card-box h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #0188df;
+    text-align: right;
+}
+
+.card-box span {
+    text-align: end;
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+}
+.review-row img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -39%;
+    left: 2%;
+}
+
+
+/* counter section css */
+
+.counter-section {
+    padding: 90px 0;
+}
+
+.counter-section .container {
+    padding: 0 210px;
+}
+
+.counter-div i {color: #0188df;font-size: 50px;}
+
+.counter-div h3 {
+    font-size: 39px;
+    line-height: 60px;
+}
+
+.counter-div {
+    text-align: center;
+}
+
+.counter-div p {
+    font-weight: 300;
+    line-height: 21px;
+    font-size: 21px;
+    font-family: emoji;
+}
+
+/* Contact section css */
+
+section.contact-form {
+    background: #354046;
+    padding: 100px 0;
+}
+
+.head-content h1 {
+    color: white;
+    padding-bottom: 10px;
+}
+
+.head-content h1 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.head-content h1 {
+    color: #354046;
+}
+
+.contact-div form .form-input {
+    width: 450px;
+    height: 40px;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.contact-div form {
+    text-align: center;
+}
+
+textarea#textare {
+    width: 83.5%;
+    margin-top: 15px;
+}
+
+
+.form-btn {
+    position: relative;
+    background: #0188df;
+    padding: 5px 35px;
+    font-size: 18px;
+    color: white;
+    border-radius: 4px;
+    z-index: 0;
+    overflow: hidden;
+}
+.form-btn::before{
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0%;
+    width: 100%;
+    border-radius: 4px;
+    height: 100%;
+    background-color: rgb(39, 39, 38);
+    z-index: -1;
+    transition: .2s linear;
+}
+.form-btn:hover:before{
+    top: 0%;
+}
+.form-btn:hover {
+    box-shadow: 1px 5px #0188df;
+}
+
+/* post section css */
+.post-box {
+    background: white;
+    box-shadow: 0 0 14px #354046;
+}
+
+.post-box img {
+    height: 220px;
+    border-radius: 4px 4px 0 0;
+}
+
+.post-box-content {
+    padding: 15px;
+}
+
+.post-box-content span {
+    font-size: 14px;
+    font-weight: 300;
+    color: #666666;
+}
+
+.post-box-content h3 {
+    color: #354046;
+    font-size: 26px;
+}
+
+.post-box-content p {
+    color: #354046;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.post-box-content button{
+    position: relative;
+    background: #0188df;
+    padding: 5px 20px;
+    font-size: 18px;
+    color: white;
+    border-radius: 4px;
+    z-index: 0;
+    overflow: hidden;
+}
+.post-box-content button::before{
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0%;
+    width: 100%;
+    border-radius: 4px;
+    height: 100%;
+    background-color: rgb(39, 39, 38);
+    z-index: -1;
+    transition: .2s linear;
+}
+.post-box-content button:hover:before{
+    top: 0%;
+}
+.post-box-content button:hover {
+    box-shadow: 1px 5px #0188df;
+}
+.post-section {
+    padding: 100px;
+}
+
+section.post-section .container {
+    padding: 0 80px;
+}
+
+
+/* footer section css */
+
+.social-icons li {
+    display: inline-block;
+    width: 41px;
+    height: auto;
+    margin-left: 5px;
+}
+.social-icons img {
+}
+
+.social-icons a:hover{
+    background-color: inherit;
+    color: inherit;
+}
+
+.social-icons {
+    text-align: right;
+}
+
+section.footer-section {
+    padding-top: 80px;
+    background: #efefef;
+}
+.footer-list{
+    padding-top: 30px;
+}
+.footer-list li a:hover {
+    color: inherit;
+    background: inherit;
+}
+.footer-list li {
+    display: inline-block;
+}
+
+.footer-list li a {
+    color: #6e6e6c;
+    margin-right: 15px;
+}
+.list-right{
+    text-align: right;
+}
+.footer-text {
+    text-align: center;
+    padding-top: 40px;
+    color: #161515;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.footer-text span {
+    color: #242121;
+    font-weight: 500;
+    font-size: 18px;
+}
+@media (max-width: 912px){
+    label.logo{
+        margin-left: 30px;
+        padding: 0px;
+    }
+   
+}
+
+@media (max-width: 858px) {
+    .checkbtn{
+        display: block;
+    }
+    label.logo{
+    
+    }
+    nav ul{
+        background: rgb(21, 27, 44);
+        position: fixed;
+        width: 100%;
+        height: 100vh ;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+      }
+    nav ul li a{
+        color: white;
+    }
+    nav ul li {
+        display: block;
+        line-height: 65px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+
+    }
+}
